@@ -1343,7 +1343,7 @@
 		
 		/* 版本号显示样式 */
 			.sidebar::after {
-				content: "20251105v01"; /* 这里设置您的版本号 */
+				content: "20260228v01"; /* 这里设置您的版本号 */
 				display: block;
 				position: fixed;
 				bottom: 10px;
@@ -1515,7 +1515,7 @@
                 </div>
                 
 				<div class="scenario-description">
-					<p>1) Find latest release and user guide from this <a href="https://quip-amazon.com/6pfAA81Mtbkl#ZIC9AAT8P8V" target=“_blank” class="contact-link">Quip</a>. 2) AGL cost scenario coverage: Standard Ocean, DDP, Sort ONLY.</p>
+					<p>1) Find this <a href="https://broadcast.amazon.com/videos/1679058" target=“_blank” class="contact-link">demo video</a> of the tool, or user manual for details - <a href="https://quip-amazon.com/6pfAA81Mtbkl#ZIC9AAT8P8V" target=“_blank” class="contact-link">CN version</a>, or <a href="https://amazon.awsapps.com/workdocs-amazon/index.html#/document/b92629a6c1b5252e090e04e377c94bb12d3322dad8c755858ea07a294986ac61" target=“_blank” class="contact-link">EN version</a> (AI-generated). 2) AGL cost scenario coverage: Ocean AFN (CN2US, Standard Ocean, DDP, Sort), Air.</p>
 				</div>
 				
                 <div class="tab-content active" id="calculator-content">
@@ -1663,7 +1663,7 @@
 									</div>
 									
 									<div class="input-group">
-										<label>Mid-East %</label>
+										<label>South-Central %</label>
 										<input type="number" id="smpMidEastPercent" min="0" max="100" step="0.1" value="23">
 									</div>
 									
@@ -1678,7 +1678,7 @@
 									</div>
 									
 									<div class="input-group">
-										<label>Central %</label>
+										<label>North-Central %</label>
 										<input type="number" id="smpCentralPercent" min="0" max="100" step="0.1" value="21">
 									</div>
 								</div>
@@ -1729,7 +1729,7 @@
 												</div>
 												
 												<div class="breakdown-section">
-													<strong>Mid-East:</strong>
+													<strong>South Central:</strong>
 													<span>$<span id="smpMidEastFclFixedCost">0.00</span> + $<span id="smpMidEastFcl40HQCost">0.00</span> + $<span id="smpMidEastLclFixedCost">0.00</span> + $<span id="smpMidEastLclCbmCost">0.00</span> = $<span id="smpMidEastTotalCost">0.00</span></span>
 													<span class="breakdown-details-micro">(PO split: <span id="smpMidEastTotalVolume">0.00</span>CBM; # of ctn: <span id="smpMidEastFclContainerCount">0</span>; LCL shipments: <span id="smpMidEastLclShipment">N</span>; LCL: <span id="smpMidEastLclVolume">0.00</span>CBM)</span>
 												</div>
@@ -1747,7 +1747,7 @@
 												</div>
 												
 												<div class="breakdown-section">
-													<strong>Central:</strong>
+													<strong>North Central:</strong>
 													<span>$<span id="smpCentralFclFixedCost">0.00</span> + $<span id="smpCentralFcl40HQCost">0.00</span> + $<span id="smpCentralLclFixedCost">0.00</span> + $<span id="smpCentralLclCbmCost">0.00</span> = $<span id="smpCentralTotalCost">0.00</span></span>
 													<span class="breakdown-details-micro">(PO split: <span id="smpCentralTotalVolume">0.00</span>CBM; # of ctn: <span id="smpCentralFclContainerCount">0</span>; LCL shipments: <span id="smpCentralLclShipment">N</span>; LCL: <span id="smpCentralLclVolume">0.00</span>CBM)</span>
 												</div>
@@ -1990,15 +1990,15 @@
                         <div class="param-grid">
                             <div class="param-item">
                                 <label>3PL FCL West Rate ($) (duty excl.)</label>
-                                <input type="number" id="customTplWestFclRate" value="3508">
+                                <input type="number" id="customTplWestFclRate" value="3618">
                             </div>
                             <div class="param-item">
                                 <label>3PL FCL East Rate ($) (duty excl.)</label>
-                                <input type="number" id="customTplEastFclRate" value="4614">
+                                <input type="number" id="customTplEastFclRate" value="3536">
                             </div>
                             <div class="param-item">
                                 <label>3PL FCL Central Rate ($) (duty excl.)</label>
-                                <input type="number" id="customTplCentralFclRate" value="4220">
+                                <input type="number" id="customTplCentralFclRate" value="4574">
                             </div>
                         </div>
                         
@@ -2007,27 +2007,27 @@
                         <div class="compact-lcl-params" id="tpl-lcl-params">
                             <div class="param-item">
                                 <label>3PL WC RMB/kg (duty incl.)</label>
-                                <input type="number" id="customTplWestRmbPerKg" value="4.25">
+                                <input type="number" id="customTplWestRmbPerKg" value="3.74">
                             </div>
                             <div class="param-item">
                                 <label>3PL EC RMB/kg (duty incl.)</label>
-                                <input type="number" id="customTplEastRmbPerKg" value="4.99">
+                                <input type="number" id="customTplEastRmbPerKg" value="5.23">
                             </div>
                             <div class="param-item">
                                 <label>3PL CC RMB/kg (duty incl.)</label>
-                                <input type="number" id="customTplCentralRmbPerKg" value="6.09">
+                                <input type="number" id="customTplCentralRmbPerKg" value="4.73">
                             </div>
                             <div class="param-item">
                                 <label>3PL WC RMB/CBM (duty excl.)</label>
-                                <input type="number" id="customTplWestRmbPerCbm" value="613.74">
+                                <input type="number" id="customTplWestRmbPerCbm" value="542.24">
                             </div>
                             <div class="param-item">
                                 <label>3PL EC RMB/CBM (duty excl.)</label>
-                                <input type="number" id="customTplEastRmbPerCbm" value="738.36">
+                                <input type="number" id="customTplEastRmbPerCbm" value="848.91">
                             </div>
                             <div class="param-item">
                                 <label>3PL CC RMB/CBM (duty excl.)</label>
-                                <input type="number" id="customTplCentralRmbPerCbm" value="922.43">
+                                <input type="number" id="customTplCentralRmbPerCbm" value="719.46">
                             </div>
                         </div>
                         
@@ -2035,7 +2035,7 @@
                         <div class="param-grid">
                             <div class="param-item">
                                 <label>Exchange Rate (USD/RMB)</label>
-                                <input type="number" id="customExchangeRate" step="0.01" value="7.1">
+                                <input type="number" id="customExchangeRate" step="0.01" value="7.0">
                             </div>
                         </div>
                         
@@ -2055,7 +2055,7 @@
                         <h3><i class="fas fa-info-circle"></i> Ocean Freight Cost Calculator Instructions</h3>
                         
                         <div class="file-info">
-                            <h4>AGL Rate Card Version: valid from Nov 1, 2025</h4>
+                            <h4>AGL Rate Card Version: valid from Feb 9, 2026</h4>
                         </div>
                         
 						<div class="filter-container" style="margin: 15px 0; padding: 10px; background: #f8f9fa; border-radius: 6px; display: flex; gap: 15px; flex-wrap: wrap;">
@@ -2086,9 +2086,9 @@
 									<option value="all">All</option>
 									<option value="US West">US West</option>
 									<option value="US East">US East</option>
-									<option value="US Central">US Central</option>
+									<option value="US North-Central">US North Central</option>
 									<option value="US South-East">US South-East</option>
-									<option value="US Mid-East">US Mid-East</option>
+									<option value="US South-Central">US South-Central</option>
 									<option value="US North-East">US North-East</option>
 								</select>
 							</label>
@@ -2121,7 +2121,7 @@
                                     <td>US West</td>
                                     <td>Sort</td>
                                     <td>106</td>
-                                    <td>8082.9845</td>
+                                    <td>8689.9845</td>
                                 </tr>
                                 <tr>
                                     <td>US</td>
@@ -2133,7 +2133,7 @@
                                     <td>US West</td>
                                     <td>Sort</td>
                                     <td>106</td>
-                                    <td>7967.3718</td>
+                                    <td>8574.3718</td>
                                 </tr>
                                 <tr>
                                     <td>US</td>
@@ -2145,7 +2145,7 @@
                                     <td>US West</td>
                                     <td>Sort</td>
                                     <td>106</td>
-                                    <td>8098.7478</td>
+                                    <td>8705.038</td>
                                 </tr>
                                 <tr>
                                     <td>US</td>
@@ -2157,7 +2157,7 @@
                                     <td>US West</td>
                                     <td>Sort</td>
                                     <td>106</td>
-                                    <td>7939.7943</td>
+                                    <td>8546.7943</td>
                                 </tr>
                                 <tr>
                                     <td>US</td>
@@ -2169,7 +2169,7 @@
                                     <td>US West</td>
                                     <td>Sort</td>
                                     <td>106</td>
-                                    <td>8094.3478</td>
+                                    <td>8701.3478</td>
                                 </tr>
                                 <tr>
                                     <td>US</td>
@@ -2181,7 +2181,7 @@
                                     <td>US West</td>
                                     <td>Sort</td>
                                     <td>106</td>
-                                    <td>8488.4661</td>
+                                    <td>9095.4661</td>
                                 </tr>
                                 <tr>
                                     <td>US</td>
@@ -2193,7 +2193,7 @@
                                     <td>US West</td>
                                     <td>Sort</td>
                                     <td>106</td>
-                                    <td>8507</td>
+                                    <td>9114</td>
                                 </tr>
                                 <tr>
                                     <td>US</td>
@@ -2205,7 +2205,7 @@
                                     <td>US West</td>
                                     <td>Sort</td>
                                     <td>106</td>
-                                    <td>8057.7563</td>
+                                    <td>8664.7563</td>
                                 </tr>
                                 <tr>
                                     <td>US</td>
@@ -2217,7 +2217,7 @@
                                     <td>US West</td>
                                     <td>Sort</td>
                                     <td>106</td>
-                                    <td>8514</td>
+                                    <td>9121</td>
                                 </tr>
                                 <tr>
                                     <td>US</td>
@@ -2229,7 +2229,7 @@
                                     <td>US West</td>
                                     <td>Sort</td>
                                     <td>106</td>
-                                    <td>8515</td>
+                                    <td>9122</td>
                                 </tr>
 								
 								<tr>
@@ -2242,7 +2242,7 @@
 									<td>US West</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>3777.9845</td>
+									<td>4384.9845</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2254,7 +2254,7 @@
 									<td>US West</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>3662.3718</td>
+									<td>4269.3718</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2266,7 +2266,7 @@
 									<td>US West</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>3793.7478</td>
+									<td>4400.038</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2278,7 +2278,7 @@
 									<td>US West</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>3634.7943</td>
+									<td>4241.7943</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2290,7 +2290,7 @@
 									<td>US West</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>3789.3478</td>
+									<td>4396.3478</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2302,7 +2302,7 @@
 									<td>US West</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4183.4661</td>
+									<td>4790.4661</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2314,7 +2314,7 @@
 									<td>US West</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4202</td>
+									<td>4809</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2326,7 +2326,7 @@
 									<td>US West</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>3752.7563</td>
+									<td>4359.7563</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2338,7 +2338,7 @@
 									<td>US West</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4209</td>
+									<td>4816</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2350,7 +2350,7 @@
 									<td>US West</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4210</td>
+									<td>4817</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2362,7 +2362,7 @@
 									<td>US East</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4953.876</td>
+									<td>5560.876</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2374,7 +2374,7 @@
 									<td>US East</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4877.1957</td>
+									<td>5484.1957</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2386,7 +2386,7 @@
 									<td>US East</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4885.5169</td>
+									<td>5489.7309</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2398,7 +2398,7 @@
 									<td>US East</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4829.3126</td>
+									<td>5436.3126</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2410,7 +2410,7 @@
 									<td>US East</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4708.2633</td>
+									<td>5315.2633</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2422,7 +2422,7 @@
 									<td>US East</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4857.8957</td>
+									<td>5464.8957</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2434,7 +2434,7 @@
 									<td>US East</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4786.2436</td>
+									<td>5393.2436</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2446,7 +2446,7 @@
 									<td>US East</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>5219.6845</td>
+									<td>5826.6845</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2458,7 +2458,7 @@
 									<td>US East</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>5524</td>
+									<td>6131</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2470,7 +2470,7 @@
 									<td>US East</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>5525</td>
+									<td>6132</td>
 								</tr>
 								
 								<!-- SMP FCL Rates - NINGBO -->
@@ -2493,10 +2493,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>NINGBO</td>
-									<td>US Central</td>
+									<td>US North-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>3780.045</td>
+									<td>5087.6295</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2505,10 +2505,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>NINGBO</td>
-									<td>US Mid-East</td>
+									<td>US South-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4829.6845</td>
+									<td>3780.045</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2555,10 +2555,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>YANTIAN</td>
-									<td>US Central</td>
+									<td>US North-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>3665.6281</td>
+									<td>5069.2971</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2567,10 +2567,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>YANTIAN</td>
-									<td>US Mid-East</td>
+									<td>US South-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4692.3788</td>
+									<td>3665.6281</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2608,7 +2608,7 @@
 									<td>US West</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>3792.2788</td>
+									<td>3791.5169</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2617,10 +2617,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>SHANGHAI</td>
-									<td>US Central</td>
+									<td>US North-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>3790.6492</td>
+									<td>5064.2253</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2629,10 +2629,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>SHANGHAI</td>
-									<td>US Mid-East</td>
+									<td>US South-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4716.1154</td>
+									<td>3789.8845</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2644,7 +2644,7 @@
 									<td>US South-East</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4409.245</td>
+									<td>4408.1901</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2656,7 +2656,7 @@
 									<td>US North-East</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>5064.6661</td>
+									<td>5064.2253</td>
 								</tr>
 
 								<!-- SMP FCL Rates - XIAMEN -->
@@ -2679,10 +2679,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>XIAMEN</td>
-									<td>US Central</td>
+									<td>US North-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>3636.0929</td>
+									<td>4972.1309</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2691,10 +2691,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>XIAMEN</td>
-									<td>US Mid-East</td>
+									<td>US South-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4694.7647</td>
+									<td>3636.0929</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2741,10 +2741,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>QINGDAO</td>
-									<td>US Central</td>
+									<td>US North-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>3792.8211</td>
+									<td>4938.9633</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2753,10 +2753,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>QINGDAO</td>
-									<td>US Mid-East</td>
+									<td>US South-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4486.6704</td>
+									<td>3792.8211</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2803,10 +2803,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>TIANJIN</td>
-									<td>US Central</td>
+									<td>US North-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4232.4971</td>
+									<td>5045.2521</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2815,10 +2815,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>TIANJIN</td>
-									<td>US Mid-East</td>
+									<td>US South-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4688.6267</td>
+									<td>4232.4971</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2856,7 +2856,7 @@
 									<td>US West</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4242</td>
+									<td>5014.2563</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2865,10 +2865,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>FUZHOU</td>
-									<td>US Central</td>
+									<td>US North-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4242</td>
+									<td>5014.2563</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2877,10 +2877,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>FUZHOU</td>
-									<td>US Mid-East</td>
+									<td>US South-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4569.3436</td>
+									<td>4242</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2927,10 +2927,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>HONGKONG</td>
-									<td>US Central</td>
+									<td>US North-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>3751.3098</td>
+									<td>4999</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2939,10 +2939,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>HONGKONG</td>
-									<td>US Mid-East</td>
+									<td>US South-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4999</td>
+									<td>3751.3098</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -2989,10 +2989,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>ZHUHAI</td>
-									<td>US Central</td>
+									<td>US North-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4249</td>
+									<td>5062.9028</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3001,10 +3001,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>ZHUHAI</td>
-									<td>US Mid-East</td>
+									<td>US South-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4603.2478</td>
+									<td>4249</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3051,10 +3051,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>LIANYUNGANG</td>
-									<td>US Central</td>
+									<td>US North-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>4250</td>
+									<td>5524</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3063,10 +3063,10 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>LIANYUNGANG</td>
-									<td>US Mid-East</td>
+									<td>US South-Central</td>
 									<td>Sort</td>
 									<td>106</td>
-									<td>5524</td>
+									<td>4250</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3127,7 +3127,7 @@
                                     <td>NINGBO</td>
                                     <td>US West</td>
                                     <td>Sort</td>
-                                    <td>86.8169</td>
+                                    <td>86.81</td>
                                     <td>0</td>
                                     <td>161.1097</td>
                                     <td>161.1097</td>
@@ -3143,7 +3143,7 @@
                                     <td>SHANGHAI</td>
                                     <td>US West</td>
                                     <td>Sort</td>
-                                    <td>89.3333</td>
+                                    <td>89.52</td>
                                     <td>0</td>
                                     <td>160.4291</td>
                                     <td>160.4291</td>
@@ -3159,7 +3159,7 @@
                                     <td>XIAMEN</td>
                                     <td>US West</td>
                                     <td>Sort</td>
-                                    <td>94.0281</td>
+                                    <td>94.02</td>
                                     <td>0</td>
                                     <td>160.7902</td>
                                     <td>160.7902</td>
@@ -3175,7 +3175,7 @@
                                     <td>QINGDAO</td>
                                     <td>US West</td>
                                     <td>Sort</td>
-                                    <td>96.7323</td>
+                                    <td>96.73</td>
                                     <td>0</td>
                                     <td>159.4444</td>
                                     <td>159.4444</td>
@@ -3191,7 +3191,7 @@
                                     <td>SHENZHEN</td>
                                     <td>US West</td>
                                     <td>Sort</td>
-                                    <td>101.2394</td>
+                                    <td>101.23</td>
                                     <td>0</td>
                                     <td>162.4</td>
                                     <td>162.4</td>
@@ -3208,12 +3208,12 @@
 									<td>NINGBO</td>
 									<td>US West</td>
 									<td>Sort</td>
-									<td>86.6666</td>
+									<td>86.81</td>
 									<td>0</td>
-									<td>89.1597</td>
-									<td>89.1597</td>
-									<td>89.1597</td>
-									<td>89.1597</td>
+									<td>75.51</td>
+									<td>75.51</td>
+									<td>75.51</td>
+									<td>75.51</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3224,12 +3224,12 @@
 									<td>SHANGHAI</td>
 									<td>US West</td>
 									<td>Sort</td>
-									<td>89.3333</td>
+									<td>89.52</td>
 									<td>0</td>
-									<td>88.6791</td>
-									<td>88.6791</td>
-									<td>88.6791</td>
-									<td>88.6791</td>
+									<td>78.86</td>
+									<td>78.86</td>
+									<td>78.86</td>
+									<td>78.86</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3240,12 +3240,12 @@
 									<td>XIAMEN</td>
 									<td>US West</td>
 									<td>Sort</td>
-									<td>93.7777</td>
+									<td>94.02</td>
 									<td>0</td>
-									<td>89.0402</td>
-									<td>89.0402</td>
-									<td>89.0402</td>
-									<td>89.0402</td>
+									<td>77.59</td>
+									<td>77.59</td>
+									<td>77.59</td>
+									<td>77.59</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3256,12 +3256,12 @@
 									<td>QINGDAO</td>
 									<td>US West</td>
 									<td>Sort</td>
-									<td>96.4444</td>
+									<td>96.73</td>
 									<td>0</td>
-									<td>87.6944</td>
-									<td>87.6944</td>
-									<td>87.6944</td>
-									<td>87.6944</td>
+									<td>53.68</td>
+									<td>53.68</td>
+									<td>53.68</td>
+									<td>53.68</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3272,12 +3272,12 @@
 									<td>SHENZHEN</td>
 									<td>US West</td>
 									<td>Sort</td>
-									<td>100.8888</td>
+									<td>101.23</td>
 									<td>0</td>
-									<td>90.65</td>
-									<td>90.65</td>
-									<td>90.65</td>
-									<td>90.65</td>
+									<td>75.25</td>
+									<td>75.25</td>
+									<td>75.25</td>
+									<td>75.25</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3288,12 +3288,12 @@
 									<td>NINGBO</td>
 									<td>US East</td>
 									<td>Sort</td>
-									<td>86.6666</td>
+									<td>86.81</td>
 									<td>0</td>
-									<td>118.0569</td>
-									<td>118.0569</td>
-									<td>118.0569</td>
-									<td>118.0569</td>
+									<td>93.69</td>
+									<td>93.69</td>
+									<td>93.69</td>
+									<td>93.69</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3304,12 +3304,12 @@
 									<td>SHANGHAI</td>
 									<td>US East</td>
 									<td>Sort</td>
-									<td>89.3333</td>
+									<td>89.52</td>
 									<td>0</td>
-									<td>117.5986</td>
-									<td>117.5986</td>
-									<td>117.5986</td>
-									<td>117.5986</td>
+									<td>99.8</td>
+									<td>99.8</td>
+									<td>99.8</td>
+									<td>99.8</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3320,12 +3320,12 @@
 									<td>XIAMEN</td>
 									<td>US East</td>
 									<td>Sort</td>
-									<td>93.7777</td>
+									<td>94.02</td>
 									<td>0</td>
-									<td>118.1152</td>
-									<td>118.1152</td>
-									<td>118.1152</td>
-									<td>118.1152</td>
+									<td>93.69</td>
+									<td>93.69</td>
+									<td>93.69</td>
+									<td>93.69</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3336,12 +3336,12 @@
 									<td>QINGDAO</td>
 									<td>US East</td>
 									<td>Sort</td>
-									<td>96.4444</td>
+									<td>96.73</td>
 									<td>0</td>
-									<td>114.8875</td>
-									<td>114.8875</td>
-									<td>114.8875</td>
-									<td>114.8875</td>
+									<td>64.45</td>
+									<td>64.45</td>
+									<td>64.45</td>
+									<td>64.45</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3352,12 +3352,12 @@
 									<td>SHENZHEN</td>
 									<td>US East</td>
 									<td>Sort</td>
-									<td>100.8888</td>
+									<td>101.23</td>
 									<td>0</td>
-									<td>122.2083</td>
-									<td>122.2083</td>
-									<td>122.2083</td>
-									<td>122.2083</td>
+									<td>83.27</td>
+									<td>83.27</td>
+									<td>83.27</td>
+									<td>83.27</td>
 								</tr>
 								
 							<!-- AGL SMP LCL Rates -->
@@ -3385,14 +3385,14 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>NINGBO</td>
-									<td>US Central</td>
+									<td>US North-Central</td>
 									<td>Sort</td>
 									<td>46.8169</td>
 									<td>0</td>
-									<td>62.4436</td>
-									<td>62.4436</td>
-									<td>62.4436</td>
-									<td>62.4436</td>
+									<td>88.5</td>
+									<td>88.5</td>
+									<td>88.5</td>
+									<td>88.5</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3417,14 +3417,14 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>NINGBO</td>
-									<td>US Mid-East</td>
+									<td>US South-Central</td>
 									<td>Sort</td>
 									<td>46.8169</td>
 									<td>0</td>
-									<td>84.4676</td>
-									<td>84.4676</td>
-									<td>84.4676</td>
-									<td>84.4676</td>
+									<td>62.44</td>
+									<td>62.44</td>
+									<td>62.44</td>
+									<td>62.44</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3467,14 +3467,14 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>SHANGHAI</td>
-									<td>US Central</td>
+									<td>US North-Central</td>
 									<td>Sort</td>
 									<td>49.5211</td>
 									<td>0</td>
-									<td>60.1422</td>
-									<td>60.1422</td>
-									<td>60.1422</td>
-									<td>60.1422</td>
+									<td>86.08</td>
+									<td>86.08</td>
+									<td>86.08</td>
+									<td>86.08</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3499,14 +3499,14 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>SHANGHAI</td>
-									<td>US Mid-East</td>
+									<td>US South-Central</td>
 									<td>Sort</td>
 									<td>49.5211</td>
 									<td>0</td>
-									<td>80.3535</td>
-									<td>80.3535</td>
-									<td>80.3535</td>
-									<td>80.3535</td>
+									<td>60.14</td>
+									<td>60.14</td>
+									<td>60.14</td>
+									<td>60.14</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3549,14 +3549,14 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>XIAMEN</td>
-									<td>US Central</td>
+									<td>US North-Central</td>
 									<td>Sort</td>
 									<td>54.0281</td>
 									<td>0</td>
-									<td>60.4478</td>
-									<td>60.4478</td>
-									<td>60.4478</td>
-									<td>60.4478</td>
+									<td>88.25</td>
+									<td>88.25</td>
+									<td>88.25</td>
+									<td>88.25</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3581,14 +3581,14 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>XIAMEN</td>
-									<td>US Mid-East</td>
+									<td>US South-Central</td>
 									<td>Sort</td>
 									<td>54.0281</td>
 									<td>0</td>
-									<td>83.814</td>
-									<td>83.814</td>
-									<td>83.814</td>
-									<td>83.814</td>
+									<td>60.44</td>
+									<td>60.44</td>
+									<td>60.44</td>
+									<td>60.44</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3631,14 +3631,14 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>QINGDAO</td>
-									<td>US Central</td>
+									<td>US North-Central</td>
 									<td>Sort</td>
 									<td>56.7323</td>
 									<td>0</td>
-									<td>62.545</td>
-									<td>62.545</td>
-									<td>62.545</td>
-									<td>62.545</td>
+									<td>87.09</td>
+									<td>87.09</td>
+									<td>87.09</td>
+									<td>87.09</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3663,14 +3663,14 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>QINGDAO</td>
-									<td>US Mid-East</td>
+									<td>US South-Central</td>
 									<td>Sort</td>
 									<td>56.7323</td>
 									<td>0</td>
-									<td>77.2535</td>
-									<td>77.2535</td>
-									<td>77.2535</td>
-									<td>77.2535</td>
+									<td>62.54</td>
+									<td>62.54</td>
+									<td>62.54</td>
+									<td>62.54</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3713,7 +3713,7 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>TIANJIN</td>
-									<td>US Central</td>
+									<td>US North-Central</td>
 									<td>Sort</td>
 									<td>47.7183</td>
 									<td>0</td>
@@ -3745,7 +3745,7 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>TIANJIN</td>
-									<td>US Mid-East</td>
+									<td>US South-Central</td>
 									<td>Sort</td>
 									<td>47.7183</td>
 									<td>0</td>
@@ -3795,14 +3795,14 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>SHENZHEN</td>
-									<td>US Central</td>
+									<td>US North-Central</td>
 									<td>Sort</td>
 									<td>61.2394</td>
 									<td>0</td>
-									<td>60.2647</td>
-									<td>60.2647</td>
-									<td>60.2647</td>
-									<td>60.2647</td>
+									<td>87.61</td>
+									<td>87.61</td>
+									<td>87.61</td>
+									<td>87.61</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3827,14 +3827,14 @@
 									<td>SMP</td>
 									<td>non-FOB</td>
 									<td>SHENZHEN</td>
-									<td>US Mid-East</td>
+									<td>US South-Central</td>
 									<td>Sort</td>
 									<td>61.2394</td>
 									<td>0</td>
-									<td>81.9183</td>
-									<td>81.9183</td>
-									<td>81.9183</td>
-									<td>81.9183</td>
+									<td>60.26</td>
+									<td>60.26</td>
+									<td>60.26</td>
+									<td>60.26</td>
 								</tr>
 								<tr>
 									<td>US</td>
@@ -3880,7 +3880,7 @@
                     <div class="tab" data-tab="air-instructions">Instructions</div>
                 </div>
                 <div class="scenario-description">
-					<p>Find latest release and user guide from this <a href="https://quip-amazon.com/6pfAA81Mtbkl#ZIC9AAT8P8V" target=“_blank” class="contact-link">Quip</a>.</p>
+					<p>1) Find this <a href="https://broadcast.amazon.com/videos/1679058" target=“_blank” class="contact-link">demo video</a> of the tool, or user manual for details - <a href="https://quip-amazon.com/6pfAA81Mtbkl#ZIC9AAT8P8V" target=“_blank” class="contact-link">CN version</a>, or <a href="https://amazon.awsapps.com/workdocs-amazon/index.html#/document/b92629a6c1b5252e090e04e377c94bb12d3322dad8c755858ea07a294986ac61" target=“_blank” class="contact-link">EN version</a> (AI-generated). 2) AGL cost scenario coverage: Ocean AFN (CN2US, Standard Ocean, DDP, Sort), Air.</p>
 				</div>
 				
                 <div class="tab-content active" id="air-calculator-content">
@@ -4144,75 +4144,75 @@
                                 <div class="param-grid">
                                     <div class="param-item">
                                         <label>HKG-WC &lt;=70KG</label>
-                                        <input type="number" id="customTplPerKgHkgWc70" value="50.688">
+                                        <input type="number" id="customTplPerKgHkgWc70" value="50.890">
                                     </div>
                                     <div class="param-item">
                                         <label>HKG-WC 71-99KG</label>
-                                        <input type="number" id="customTplPerKgHkgWc99" value="50.688">
+                                        <input type="number" id="customTplPerKgHkgWc99" value="50.890">
                                     </div>
                                     <div class="param-item">
                                         <label>HKG-WC &gt;=100KG</label>
-                                        <input type="number" id="customTplPerKgHkgWc100" value="49.752">
+                                        <input type="number" id="customTplPerKgHkgWc100" value="49.140">
                                     </div>
                                     <div class="param-item">
                                         <label>HKG-EC &lt;=70KG</label>
-                                        <input type="number" id="customTplPerKgHkgEc70" value="54">
+                                        <input type="number" id="customTplPerKgHkgEc70" value="54.890">
                                     </div>
                                     <div class="param-item">
                                         <label>HKG-EC 71-99KG</label>
-                                        <input type="number" id="customTplPerKgHkgEc99" value="54">
+                                        <input type="number" id="customTplPerKgHkgEc99" value="54.890">
                                     </div>
                                     <div class="param-item">
                                         <label>HKG-EC &gt;=100KG</label>
-                                        <input type="number" id="customTplPerKgHkgEc100" value="52.704">
+                                        <input type="number" id="customTplPerKgHkgEc100" value="52.890">
                                     </div>
                                     <div class="param-item">
                                         <label>HKG-CC &lt;=70KG</label>
-                                        <input type="number" id="customTplPerKgHkgCc70" value="52.992">
+                                        <input type="number" id="customTplPerKgHkgCc70" value="52.890">
                                     </div>
                                     <div class="param-item">
                                         <label>HKG-CC 71-99KG</label>
-                                        <input type="number" id="customTplPerKgHkgCc99" value="52.992">
+                                        <input type="number" id="customTplPerKgHkgCc99" value="52.890">
                                     </div>
                                     <div class="param-item">
                                         <label>HKG-CC &gt;=100KG</label>
-                                        <input type="number" id="customTplPerKgHkgCc100" value="51.768">
+                                        <input type="number" id="customTplPerKgHkgCc100" value="51.890">
                                     </div>
                                     <div class="param-item">
                                         <label>PVG-WC &lt;=70KG</label>
-                                        <input type="number" id="customTplPerKgPvgWc70" value="42.768">
+                                        <input type="number" id="customTplPerKgPvgWc70" value="48.650">
                                     </div>
                                     <div class="param-item">
                                         <label>PVG-WC 71-99KG</label>
-                                        <input type="number" id="customTplPerKgPvgWc99" value="42.768">
+                                        <input type="number" id="customTplPerKgPvgWc99" value="48.650">
                                     </div>
                                     <div class="param-item">
                                         <label>PVG-WC &gt;=100KG</label>
-                                        <input type="number" id="customTplPerKgPvgWc100" value="38.664">
+                                        <input type="number" id="customTplPerKgPvgWc100" value="46.200">
                                     </div>
                                     <div class="param-item">
                                         <label>PVG-EC &lt;=70KG</label>
-                                        <input type="number" id="customTplPerKgPvgEc70" value="44.784">
+                                        <input type="number" id="customTplPerKgPvgEc70" value="50.650">
                                     </div>
                                     <div class="param-item">
                                         <label>PVG-EC 71-99KG</label>
-                                        <input type="number" id="customTplPerKgPvgEc99" value="44.784">
+                                        <input type="number" id="customTplPerKgPvgEc99" value="50.650">
                                     </div>
                                     <div class="param-item">
                                         <label>PVG-EC &gt;=100KG</label>
-                                        <input type="number" id="customTplPerKgPvgEc100" value="41.688">
+                                        <input type="number" id="customTplPerKgPvgEc100" value="48.200">
                                     </div>
                                     <div class="param-item">
                                         <label>PVG-CC &lt;=70KG</label>
-                                        <input type="number" id="customTplPerKgPvgCc70" value="43.776">
+                                        <input type="number" id="customTplPerKgPvgCc70" value="49.650">
                                     </div>
                                     <div class="param-item">
                                         <label>PVG-CC 71-99KG</label>
-                                        <input type="number" id="customTplPerKgPvgCc99" value="43.776">
+                                        <input type="number" id="customTplPerKgPvgCc99" value="49.650">
                                     </div>
                                     <div class="param-item">
                                         <label>PVG-CC &gt;=100KG</label>
-                                        <input type="number" id="customTplPerKgPvgCc100" value="40.68">
+                                        <input type="number" id="customTplPerKgPvgCc100" value="47.200">
                                     </div>
                                     
                                     <div class="param-item special-cargo-item">
@@ -4228,27 +4228,27 @@
                                 <div class="param-grid">
                                     <div class="param-item">
                                         <label>HKG &lt;=70KG</label>
-                                        <input type="number" id="customTplExpressPerKgHkg70" value="48.96">
+                                        <input type="number" id="customTplExpressPerKgHkg70" value="44.94">
                                     </div>
                                     <div class="param-item">
                                         <label>HKG 71-99KG</label>
-                                        <input type="number" id="customTplExpressPerKgHkg99" value="48.96">
+                                        <input type="number" id="customTplExpressPerKgHkg99" value="44.94">
                                     </div>
                                     <div class="param-item">
                                         <label>HKG &gt;=100KG</label>
-                                        <input type="number" id="customTplExpressPerKgHkg100" value="48.384">
+                                        <input type="number" id="customTplExpressPerKgHkg100" value="44.94">
                                     </div>
                                     <div class="param-item">
                                         <label>PVG &lt;=70KG</label>
-                                        <input type="number" id="customTplExpressPerKgPvg70" value="47.96">
+                                        <input type="number" id="customTplExpressPerKgPvg70" value="43.94">
                                     </div>
                                     <div class="param-item">
                                         <label>PVG 71-99KG</label>
-                                        <input type="number" id="customTplExpressPerKgPvg99" value="47.96">
+                                        <input type="number" id="customTplExpressPerKgPvg99" value="43.94">
                                     </div>
                                     <div class="param-item">
                                         <label>PVG &gt;=100KG</label>
-                                        <input type="number" id="customTplExpressPerKgPvg100" value="47.384">
+                                        <input type="number" id="customTplExpressPerKgPvg100" value="43.94">
                                     </div>
                                     
                                     <div class="param-item special-cargo-item">
@@ -4263,7 +4263,7 @@
                         <div class="param-grid">
                             <div class="param-item">
                                 <label>Exchange Rate (USD/RMB)</label>
-                                <input type="number" id="customAirExchangeRate" step="0.01" value="7.1">
+                                <input type="number" id="customAirExchangeRate" step="0.01" value="7.0">
                             </div>
                         </div>
                         
@@ -4283,7 +4283,7 @@
                         <h3><i class="fas fa-info-circle"></i> Air Freight Cost Calculator Instructions</h3>
                         
                         <div class="file-info">
-                            <h4>AGL Rate Card Version: valid from Oct 9, 2025</h4>
+                            <h4>AGL Rate Card Version: valid from Mar 2 to Mar 8, 2026</h4>
                         </div>
                         
                         <h3>AGL Rate Card</h3>
@@ -4313,7 +4313,7 @@
                                     <td>MSS</td>
                                     <td>Shanghai</td>
                                     <td>713.880</td>
-                                    <td>44.084</td>
+                                    <td>30.749</td>
                                 </tr>
                                 <tr>
                                     <td>RMB</td>
@@ -4321,7 +4321,7 @@
                                     <td>AMP</td>
                                     <td>HongKong</td>
                                     <td>825.000</td>
-                                    <td>56.776</td>
+                                    <td>44.553</td>
                                 </tr>
                                 <tr>
                                     <td>RMB</td>
@@ -4329,7 +4329,7 @@
                                     <td>AMP</td>
                                     <td>Shanghai</td>
                                     <td>713.880</td>
-                                    <td>52.076</td>
+                                    <td>38.741</td>
                                 </tr>
                                 <tr>
                                     <td>RMB</td>
@@ -4337,7 +4337,7 @@
                                     <td>MSS</td>
                                     <td>HongKong</td>
                                     <td>547.200</td>
-                                    <td>42.672</td>
+                                    <td>30.449</td>
                                 </tr>
                                 <tr>
                                     <td>RMB</td>
@@ -4345,7 +4345,7 @@
                                     <td>MSS</td>
                                     <td>Shanghai</td>
                                     <td>547.200</td>
-                                    <td>42.972</td>
+                                    <td>29.638</td>
                                 </tr>
                                 <tr>
                                     <td>RMB</td>
@@ -4353,7 +4353,7 @@
                                     <td>AMP</td>
                                     <td>HongKong</td>
                                     <td>547.200</td>
-                                    <td>50.664</td>
+                                    <td>38.441</td>
                                 </tr>
                                 <tr>
                                     <td>RMB</td>
@@ -4361,7 +4361,7 @@
                                     <td>AMP</td>
                                     <td>Shanghai</td>
                                     <td>547.200</td>
-                                    <td>50.964</td>
+                                    <td>37.630</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -4544,16 +4544,16 @@ function customAlert(message) {
             
             // 初始化预设参数
             let oceanPresetRates = {
-                tplWestFclRate: 3508,
-                tplEastFclRate: 4614,
-                tplCentralFclRate: 4220,
-                tplWestRmbPerKg: 4.25,
-                tplEastRmbPerKg: 4.99,
-                tplCentralRmbPerKg: 6.09,
-                tplWestRmbPerCbm: 613.74,
-                tplEastRmbPerCbm: 738.36,
-                tplCentralRmbPerCbm: 922.43,
-                exchangeRate: 7.1
+                tplWestFclRate: 3618,
+                tplEastFclRate: 3536,
+                tplCentralFclRate: 4574,
+                tplWestRmbPerKg: 3.74,
+                tplEastRmbPerKg: 5.23,
+                tplCentralRmbPerKg: 4.73,
+                tplWestRmbPerCbm: 542.24,
+                tplEastRmbPerCbm: 848.91,
+                tplCentralRmbPerCbm: 719.46,
+                exchangeRate: 7.0
             };
             
             let airPresetRates = {
@@ -4581,7 +4581,7 @@ function customAlert(message) {
                 tplExpressPerKgPvg70: 47.62,
                 tplExpressPerKgPvg99: 46.81,
                 tplExpressPerKgPvg100: 46.81,
-                exchangeRate: 7.1,
+                exchangeRate: 7.0,
                 tplSpecialCargo: 0,
                 tplExpressSpecialCargo: 0
             };
@@ -4677,71 +4677,71 @@ function customAlert(message) {
 			const smpFclBooking40HQRates = {
 				"NINGBO": {
 					"US West": 3781.6746,
-					"US Central": 3780.045,
-					"US Mid-East": 4829.6845,
+					"US North-Central": 5087.6295,
+					"US South-Central": 3780.045,
 					"US South-East": 4392.9971,
 					"US North-East": 5087.6295
 				},
 				"YANTIAN": {
 					"US West": 3667.2577,
-					"US Central": 3665.6281,
-					"US Mid-East": 4692.3788,
+					"US North-Central": 5069.2971,
+					"US South-Central": 3665.6281,
 					"US South-East": 4306.8309,
 					"US North-East": 5069.2971
 				},
 				"SHANGHAI": {
-					"US West": 3792.2788,
-					"US Central": 3790.6492,
-					"US Mid-East": 4716.1154,
-					"US South-East": 4409.245,
-					"US North-East": 5064.6661
+					"US West": 3791.5169,
+					"US North-Central": 5064.2253,
+					"US South-Central": 3789.8845,
+					"US South-East": 4408.1901,
+					"US North-East": 5064.2253
 				},
 				"XIAMEN": {
 					"US West": 3637.7239,
-					"US Central": 3636.0929,
-					"US Mid-East": 4694.7647,
+					"US North-Central": 4972.1309,
+					"US US South-Central": 3636.0929,
 					"US South-East": 4482.5183,
 					"US North-East": 4972.1309
 				},
 				"QINGDAO": {
 					"US West": 3794.4507,
-					"US Central": 3792.8211,
-					"US Mid-East": 4486.6704,
+					"US North-Central": 4938.9633,
+					"US South-Central": 3792.8211,
 					"US South-East": 4352.4464,
 					"US North-East": 4938.9633
 				},
 				"TIANJIN": {
 					"US West": 4234.1267,
-					"US Central": 4232.4971,
-					"US Mid-East": 4688.6267,
+					"US North-Central": 5045.2521,
+					"US South-Central": 4232.4971,
 					"US South-East": 4418.8577,
 					"US North-East": 5045.2521
 				},
 				"FUZHOU": {
-					"US West": 4242,
-					"US Central": 4242,
-					"US Mid-East": 4569.3436,
+					"US West": 5014.2563,
+					"US North-Central": 5014.2563,
+					"US South-Central": 4242,
 					"US South-East": 4306.4197,
 					"US North-East": 5014.2563
 				},
 				"HONGKONG": {
 					"US West": 3752.9394,
-					"US Central": 3751.3098,
-					"US Mid-East": 4999,
+					"US North-Central": 4999,
+					"US South-Central": 3751.3098,
 					"US South-East": 4349.1042,
 					"US North-East": 4999
 				},
 				"ZHUHAI": {
 					"US West": 4249,
-					"US Central": 4249,
-					"US Mid-East": 4603.2478,
+					"US North-Central": 5062.9028,
+					"US South-Central": 4249,
 					"US South-East": 4353.014,
 					"US North-East": 5062.9028
 				},
 				"LIANYUNGANG": {
 					"US West": 4250,
-					"US Central": 4250,
-					"US Mid-East": 5524,
+					"US North-Central": 5524,
+					"US South-Central": 4250,
 					"US South-East": 5524,
 					"US North-East": 5524
 				}
@@ -4801,44 +4801,44 @@ function customAlert(message) {
 			const smpLclRates = {
 				"NINGBO": {
 					"US West": { fixed: 46.8169, rates: [66.9211, 66.9211, 66.9211, 66.9211] },
-					"US Central": { fixed: 46.8169, rates: [62.4436, 62.4436, 62.4436, 62.4436] },
+					"US North-Central": { fixed: 46.8169, rates: [88.5, 88.5, 88.5, 88.5] },
 					"US South-East": { fixed: 46.8169, rates: [77.0197, 77.0197, 77.0197, 77.0197] },
-					"US Mid-East": { fixed: 46.8169, rates: [84.4676, 84.4676, 84.4676, 84.4676] },
+					"US South-Central": { fixed: 46.8169, rates: [62.44, 62.44, 62.44, 62.44] },
 					"US North-East": { fixed: 46.8169, rates: [88.5, 88.5, 88.5, 88.5] }
 				},
 				"SHANGHAI": {
 					"US West": { fixed: 49.5211, rates: [64.6211, 64.6211, 64.6211, 64.6211] },
-					"US Central": { fixed: 49.5211, rates: [60.1422, 60.1422, 60.1422, 60.1422] },
+					"US North-Central": { fixed: 49.5211, rates: [86.08, 86.08, 86.08, 86.08] },
 					"US South-East": { fixed: 49.5211, rates: [75.1521, 75.1521, 75.1521, 75.1521] },
-					"US Mid-East": { fixed: 49.5211, rates: [80.3535, 80.3535, 80.3535, 80.3535] },
+					"US South-Central": { fixed: 49.5211, rates: [60.14, 60.14, 60.14, 60.14] },
 					"US North-East": { fixed: 49.5211, rates: [86.0802, 86.0802, 86.0802, 86.0802] }
 				},
 				"XIAMEN": {
 					"US West": { fixed: 54.0281, rates: [64.9253, 64.9253, 64.9253, 64.9253] },
-					"US Central": { fixed: 54.0281, rates: [60.4478, 60.4478, 60.4478, 60.4478] },
+					"US North-Central": { fixed: 54.0281, rates: [88.25, 88.25, 88.25, 88.25] },
 					"US South-East": { fixed: 54.0281, rates: [79.6887, 79.6887, 79.6887, 79.6887] },
-					"US Mid-East": { fixed: 54.0281, rates: [83.814, 83.814, 83.814, 83.814] },
+					"US South-Central": { fixed: 54.0281, rates: [60.44, 60.44, 60.44, 60.44] },
 					"US North-East": { fixed: 54.0281, rates: [88.2507, 88.2507, 88.2507, 88.2507] }
 				},
 				"QINGDAO": {
 					"US West": { fixed: 56.7323, rates: [67.0225, 67.0225, 67.0225, 67.0225] },
-					"US Central": { fixed: 56.7323, rates: [62.545, 62.545, 62.545, 62.545] },
+					"US North-Central": { fixed: 56.7323, rates: [87.09, 87.09, 87.09, 87.09] },
 					"US South-East": { fixed: 56.7323, rates: [76.914, 76.914, 76.914, 76.914] },
-					"US Mid-East": { fixed: 56.7323, rates: [77.2535, 77.2535, 77.2535, 77.2535] },
+					"US South-Central": { fixed: 56.7323, rates: [62.54, 62.54, 62.54, 62.54] },
 					"US North-East": { fixed: 56.7323, rates: [87.0971, 87.0971, 87.0971, 87.0971] }
 				},
 				"TIANJIN": {
 					"US West": { fixed: 47.7183, rates: [105.9239, 105.9239, 105.4295, 87.6943] },
-					"US Central": { fixed: 47.7183, rates: [105.9239, 105.9239, 105.4295, 87.6943] },
+					"US North-Central": { fixed: 47.7183, rates: [105.9239, 105.9239, 105.4295, 87.6943] },
 					"US South-East": { fixed: 47.7183, rates: [138.7338, 138.7338, 138.1915, 114.8873] },
-					"US Mid-East": { fixed: 47.7183, rates: [138.7338, 138.7338, 138.1915, 114.8873] },
+					"US South-Central": { fixed: 47.7183, rates: [138.7338, 138.7338, 138.1915, 114.8873] },
 					"US North-East": { fixed: 47.7183, rates: [138.7338, 138.7338, 138.1915, 114.8873] }
 				},
 				"SHENZHEN": {
 					"US West": { fixed: 61.2394, rates: [64.7422, 64.7422, 64.7422, 64.7422] },
-					"US Central": { fixed: 61.2394, rates: [60.2647, 60.2647, 60.2647, 60.2647] },
+					"US North-Central": { fixed: 61.2394, rates: [87.61, 87.61, 87.61, 87.61] },
 					"US South-East": { fixed: 61.2394, rates: [75.2521, 75.2521, 75.2521, 75.2521] },
-					"US Mid-East": { fixed: 61.2394, rates: [81.9183, 81.9183, 81.9183, 81.9183] },
+					"US South-Central": { fixed: 61.2394, rates: [60.26, 60.26, 60.26, 60.26] },
 					"US North-East": { fixed: 61.2394, rates: [87.6169, 87.6169, 87.6169, 87.6169] }
 				}
 			};
@@ -4847,30 +4847,30 @@ function customAlert(message) {
             const airAglRates = {
                 "HONGKONG": {
                     "DDP": {
-                        "MSS": { fixed: 825.000, perKg: 48.784 },
-                        "AMP": { fixed: 825.000, perKg: 56.776 }
+                        "MSS": { fixed: 825.000, perKg: 36.561 },
+                        "AMP": { fixed: 825.000, perKg: 44.553 }
                     },
                     "EXW": {
-                        "MSS": { fixed: 825.000, perKg: 48.784 },
-                        "AMP": { fixed: 825.000, perKg: 56.776 }
+                        "MSS": { fixed: 825.000, perKg: 36.561 },
+                        "AMP": { fixed: 825.000, perKg: 44.553 }
                     },
                     "FOB": {
-                        "MSS": { fixed: 547.200, perKg: 42.672 },
-                        "AMP": { fixed: 547.200, perKg: 50.664 }
+                        "MSS": { fixed: 547.200, perKg: 30.449 },
+                        "AMP": { fixed: 547.200, perKg: 38.441 }
                     }
                 },
                 "SHANGHAI": {
                     "DDP": {
-                        "MSS": { fixed: 713.880, perKg: 44.084 },
-                        "AMP": { fixed: 713.880, perKg: 52.076 }
+                        "MSS": { fixed: 713.880, perKg: 30.749 },
+                        "AMP": { fixed: 713.880, perKg: 38.741 }
                     },
                     "EXW": {
-                        "MSS": { fixed: 713.880, perKg: 44.084 },
-                        "AMP": { fixed: 713.880, perKg: 52.076 }
+                        "MSS": { fixed: 713.880, perKg: 30.749 },
+                        "AMP": { fixed: 713.880, perKg: 38.741 }
                     },
                     "FOB": {
-                        "MSS": { fixed: 547.200, perKg: 42.972 },
-                        "AMP": { fixed: 547.200, perKg: 50.964 }
+                        "MSS": { fixed: 547.200, perKg: 29.638 },
+                        "AMP": { fixed: 547.200, perKg: 37.630 }
                     }
                 }
             };
@@ -5196,10 +5196,10 @@ function customAlert(message) {
 				
 				// 计算各区域FCL费用
 				const westFcl40HQCost = westContainerCount * (smpFclBooking40HQRates[fclPol]?.["US West"] || 0);
-				const midEastFcl40HQCost = midEastContainerCount * (smpFclBooking40HQRates[fclPol]?.["US Mid-East"] || 0);
+				const midEastFcl40HQCost = midEastContainerCount * (smpFclBooking40HQRates[fclPol]?.["US South-Central"] || 0);
 				const southEastFcl40HQCost = southEastContainerCount * (smpFclBooking40HQRates[fclPol]?.["US South-East"] || 0);
 				const northEastFcl40HQCost = northEastContainerCount * (smpFclBooking40HQRates[fclPol]?.["US North-East"] || 0);
-				const centralFcl40HQCost = centralContainerCount * (smpFclBooking40HQRates[fclPol]?.["US Central"] || 0);
+				const centralFcl40HQCost = centralContainerCount * (smpFclBooking40HQRates[fclPol]?.["US North-Central"] || 0);
 				
 				// 计算各区域FCL固定费用
 				const westFclFixedCost = westContainerCount * smpFclFixedFee;
@@ -5210,10 +5210,10 @@ function customAlert(message) {
 				
 				// 计算各区域LCL费用 - 基于剩余LCL体积和对应的费率区间（使用调整后的LCL POL）
 				const westLclCbmCost = calculateSmpLclCbmCost(lclPol, "US West", westLclVolume);
-				const midEastLclCbmCost = calculateSmpLclCbmCost(lclPol, "US Mid-East", midEastLclVolume);
+				const midEastLclCbmCost = calculateSmpLclCbmCost(lclPol, "US South-Central", midEastLclVolume);
 				const southEastLclCbmCost = calculateSmpLclCbmCost(lclPol, "US South-East", southEastLclVolume);
 				const northEastLclCbmCost = calculateSmpLclCbmCost(lclPol, "US North-East", northEastLclVolume);
-				const centralLclCbmCost = calculateSmpLclCbmCost(lclPol, "US Central", centralLclVolume);
+				const centralLclCbmCost = calculateSmpLclCbmCost(lclPol, "US North-Central", centralLclVolume);
 				
 				// 计算各区域LCL固定费用（只有有LCL体积时才收取固定费用）
 				const westLclFixedCost = westLclVolume > 0 ? smpLclFixedFee : 0;
@@ -5313,51 +5313,51 @@ function customAlert(message) {
 				const rateMap = {
 					"NINGBO": {
 						"US West": 66.9211,
-						"US Central": 62.4436,
+						"US North-Central": 88.5,
 						"US South-East": 77.0197,
-						"US Mid-East": 84.4676,
+						"US South-Central": 62.44,
 						"US North-East": 88.5
 					},
 					"SHANGHAI": {
 						"US West": 64.6211,
-						"US Central": 60.1422,
+						"US North-Central": 86.08,
 						"US South-East": 75.1521,
-						"US Mid-East": 80.3535,
+						"US South-Central": 60.14,
 						"US North-East": 86.0802
 					},
 					"XIAMEN": {
 						"US West": 64.9253,
-						"US Central": 60.4478,
+						"US North-Central": 88.25,
 						"US South-East": 79.6887,
-						"US Mid-East": 83.814,
+						"US South-Central": 60.44,
 						"US North-East": 88.2507
 					},
 					"QINGDAO": {
 						"US West": 67.0225,
-						"US Central": 62.545,
+						"US North-Central": 87.09,
 						"US South-East": 76.914,
-						"US Mid-East": 77.2535,
+						"US South-Central": 62.54,
 						"US North-East": 87.0971
 					},
 					"TIANJIN": {
 						"US West": 105.9239,
-						"US Central": 105.9239,
+						"US North-Central": 105.9239,
 						"US South-East": 138.7338,
-						"US Mid-East": 138.7338,
+						"US South-Central": 138.7338,
 						"US North-East": 138.7338
 					},
 					"SHENZHEN": {
 						"US West": 64.7422,
-						"US Central": 60.2647,
+						"US North-Central": 87.61,
 						"US South-East": 75.2521,
-						"US Mid-East": 81.9183,
+						"US South-Central": 60.26,
 						"US North-East": 87.6169
 					},
 					"YANTIAN": {
 						"US West": 64.7422,
-						"US Central": 60.2647,
+						"US North-Central": 87.61,
 						"US South-East": 75.2521,
-						"US Mid-East": 81.9183,
+						"US South-Central": 60.26,
 						"US North-East": 87.6169
 					}
 				};
@@ -5759,10 +5759,10 @@ function customAlert(message) {
 
 				// 使用SMP LCL独立价卡计算各区域费用
 				const smpWestCost = smpWestVolume * getLclRate(smpLclRates[lclPol]["US West"], smpWestVolume);
-				const smpMidEastCost = smpMidEastVolume * getLclRate(smpLclRates[lclPol]["US Mid-East"], smpMidEastVolume);
+				const smpMidEastCost = smpMidEastVolume * getLclRate(smpLclRates[lclPol]["US South-Central"], smpMidEastVolume);
 				const smpSouthEastCost = smpSouthEastVolume * getLclRate(smpLclRates[lclPol]["US South-East"], smpSouthEastVolume);
 				const smpNorthEastCost = smpNorthEastVolume * getLclRate(smpLclRates[lclPol]["US North-East"], smpNorthEastVolume);
-				const smpCentralCost = smpCentralVolume * getLclRate(smpLclRates[lclPol]["US Central"], smpCentralVolume);
+				const smpCentralCost = smpCentralVolume * getLclRate(smpLclRates[lclPol]["US North-Central"], smpCentralVolume);
 
 				const smpDuty = totalUnitsLCL * declareValueAGL * tariffRate;
 				const smpLclCost = smpFixedFee + smpWestCost + smpMidEastCost + smpSouthEastCost + smpNorthEastCost + smpCentralCost + smpDuty;
@@ -6041,7 +6041,7 @@ function customAlert(message) {
                 const declareValueAGL = parseFloat(document.getElementById('declareValueAGL-air').value) || 1;
                 const declareValue3PL = parseFloat(document.getElementById('declareValue3PL-air').value) || 1;
                 const ibFeeWest = parseFloat(document.getElementById('ibFeeWest-air').value) || 0.3;
-                const exchangeRate = parseFloat(document.getElementById('customAirExchangeRate').value) || 7.1;
+                const exchangeRate = parseFloat(document.getElementById('customAirExchangeRate').value) || 7.0;
                 const tplSpecialCargo = parseFloat(document.getElementById('customTplSpecialCargo').value) || 0;
                 const tplExpressSpecialCargo = parseFloat(document.getElementById('customTplExpressSpecialCargo').value) || 0;
                 
@@ -6215,39 +6215,39 @@ function customAlert(message) {
             // 应用自定义空运费率
             document.getElementById('applyAirCustomRatesBtn').addEventListener('click', function() {
                 // 更新3PL费率
-                currentAirRates.tplPerKgHkgWc70 = parseFloat(document.getElementById('customTplPerKgHkgWc70').value) || 50.688
-                currentAirRates.tplPerKgHkgWc99 = parseFloat(document.getElementById('customTplPerKgHkgWc99').value) || 50.688;
-                currentAirRates.tplPerKgHkgWc100 = parseFloat(document.getElementById('customTplPerKgHkgWc100').value) || 49.752;
-                currentAirRates.tplPerKgHkgEc70 = parseFloat(document.getElementById('customTplPerKgHkgEc70').value) || 54;
-                currentAirRates.tplPerKgHkgEc99 = parseFloat(document.getElementById('customTplPerKgHkgEc99').value) || 54;
-                currentAirRates.tplPerKgHkgEc100 = parseFloat(document.getElementById('customTplPerKgHkgEc100').value) || 52.704;
-                currentAirRates.tplPerKgHkgCc70 = parseFloat(document.getElementById('customTplPerKgHkgCc70').value) || 52.992;
-                currentAirRates.tplPerKgHkgCc99 = parseFloat(document.getElementById('customTplPerKgHkgCc99').value) || 52.992;
-                currentAirRates.tplPerKgHkgCc100 = parseFloat(document.getElementById('customTplPerKgHkgCc100').value) || 51.768;
-                currentAirRates.tplPerKgPvgWc70 = parseFloat(document.getElementById('customTplPerKgPvgWc70').value) || 42.768;
-                currentAirRates.tplPerKgPvgWc99 = parseFloat(document.getElementById('customTplPerKgPvgWc99').value) || 42.768;
-                currentAirRates.tplPerKgPvgWc100 = parseFloat(document.getElementById('customTplPerKgPvgWc100').value) || 38.664;
-                currentAirRates.tplPerKgPvgEc70 = parseFloat(document.getElementById('customTplPerKgPvgEc70').value) || 44.784;
-                currentAirRates.tplPerKgPvgEc99 = parseFloat(document.getElementById('customTplPerKgPvgEc99').value) || 44.784;
-                currentAirRates.tplPerKgPvgEc100 = parseFloat(document.getElementById('customTplPerKgPvgEc100').value) || 41.688;
-                currentAirRates.tplPerKgPvgCc70 = parseFloat(document.getElementById('customTplPerKgPvgCc70').value) || 43.776;
-                currentAirRates.tplPerKgPvgCc99 = parseFloat(document.getElementById('customTplPerKgPvgCc99').value) || 43.776;
-                currentAirRates.tplPerKgPvgCc100 = parseFloat(document.getElementById('customTplPerKgPvgCc100').value) || 40.68;
+                currentAirRates.tplPerKgHkgWc70 = parseFloat(document.getElementById('customTplPerKgHkgWc70').value) || 50.890
+                currentAirRates.tplPerKgHkgWc99 = parseFloat(document.getElementById('customTplPerKgHkgWc99').value) || 50.890;
+                currentAirRates.tplPerKgHkgWc100 = parseFloat(document.getElementById('customTplPerKgHkgWc100').value) || 49.140;
+                currentAirRates.tplPerKgHkgEc70 = parseFloat(document.getElementById('customTplPerKgHkgEc70').value) || 54.890;
+                currentAirRates.tplPerKgHkgEc99 = parseFloat(document.getElementById('customTplPerKgHkgEc99').value) || 54.890;
+                currentAirRates.tplPerKgHkgEc100 = parseFloat(document.getElementById('customTplPerKgHkgEc100').value) || 52.890;
+                currentAirRates.tplPerKgHkgCc70 = parseFloat(document.getElementById('customTplPerKgHkgCc70').value) || 52.890;
+                currentAirRates.tplPerKgHkgCc99 = parseFloat(document.getElementById('customTplPerKgHkgCc99').value) || 52.890;
+                currentAirRates.tplPerKgHkgCc100 = parseFloat(document.getElementById('customTplPerKgHkgCc100').value) || 51.890;
+                currentAirRates.tplPerKgPvgWc70 = parseFloat(document.getElementById('customTplPerKgPvgWc70').value) || 48.650;
+                currentAirRates.tplPerKgPvgWc99 = parseFloat(document.getElementById('customTplPerKgPvgWc99').value) || 48.650;
+                currentAirRates.tplPerKgPvgWc100 = parseFloat(document.getElementById('customTplPerKgPvgWc100').value) || 46.200;
+                currentAirRates.tplPerKgPvgEc70 = parseFloat(document.getElementById('customTplPerKgPvgEc70').value) || 50.650;
+                currentAirRates.tplPerKgPvgEc99 = parseFloat(document.getElementById('customTplPerKgPvgEc99').value) || 50.650;
+                currentAirRates.tplPerKgPvgEc100 = parseFloat(document.getElementById('customTplPerKgPvgEc100').value) || 48.200;
+                currentAirRates.tplPerKgPvgCc70 = parseFloat(document.getElementById('customTplPerKgPvgCc70').value) || 49.650;
+                currentAirRates.tplPerKgPvgCc99 = parseFloat(document.getElementById('customTplPerKgPvgCc99').value) || 49.650;
+                currentAirRates.tplPerKgPvgCc100 = parseFloat(document.getElementById('customTplPerKgPvgCc100').value) || 47.200;
                 
                 // 更新快递费率
-                currentAirRates.tplExpressPerKgHkg70 = parseFloat(document.getElementById('customTplExpressPerKgHkg70').value) || 48.96;
-                currentAirRates.tplExpressPerKgHkg99 = parseFloat(document.getElementById('customTplExpressPerKgHkg99').value) || 48.96;
-                currentAirRates.tplExpressPerKgHkg100 = parseFloat(document.getElementById('customTplExpressPerKgHkg100').value) || 48.384;
-                currentAirRates.tplExpressPerKgPvg70 = parseFloat(document.getElementById('customTplExpressPerKgPvg70').value) || 47.96;
-                currentAirRates.tplExpressPerKgPvg99 = parseFloat(document.getElementById('customTplExpressPerKgPvg99').value) || 47.96;
-                currentAirRates.tplExpressPerKgPvg100 = parseFloat(document.getElementById('customTplExpressPerKgPvg100').value) || 47.384;
+                currentAirRates.tplExpressPerKgHkg70 = parseFloat(document.getElementById('customTplExpressPerKgHkg70').value) || 44.94;
+                currentAirRates.tplExpressPerKgHkg99 = parseFloat(document.getElementById('customTplExpressPerKgHkg99').value) || 44.94;
+                currentAirRates.tplExpressPerKgHkg100 = parseFloat(document.getElementById('customTplExpressPerKgHkg100').value) || 44.94;
+                currentAirRates.tplExpressPerKgPvg70 = parseFloat(document.getElementById('customTplExpressPerKgPvg70').value) || 43.94;
+                currentAirRates.tplExpressPerKgPvg99 = parseFloat(document.getElementById('customTplExpressPerKgPvg99').value) || 43.94;
+                currentAirRates.tplExpressPerKgPvg100 = parseFloat(document.getElementById('customTplExpressPerKgPvg100').value) || 43.94;
                 
                 // 更新特殊货物附加费
                 currentAirRates.tplSpecialCargo = parseFloat(document.getElementById('customTplSpecialCargo').value) || 0;
                 currentAirRates.tplExpressSpecialCargo = parseFloat(document.getElementById('customTplExpressSpecialCargo').value) || 0;
                 
                 // 更新汇率
-                currentAirRates.exchangeRate = parseFloat(document.getElementById('customAirExchangeRate').value) || 7.1;
+                currentAirRates.exchangeRate = parseFloat(document.getElementById('customAirExchangeRate').value) || 7.0;
                 
                 // 使用新费率重新计算
                 calculateAirCosts();
@@ -6260,33 +6260,33 @@ function customAlert(message) {
                 currentAirRates = {...airPresetRates};
                 
                 // 重置所有输入字段
-                document.getElementById('customTplPerKgHkgWc70').value = 50.688;
-                document.getElementById('customTplPerKgHkgWc99').value = 50.688;
-                document.getElementById('customTplPerKgHkgWc100').value = 49.752;
-                document.getElementById('customTplPerKgHkgEc70').value = 54;
-                document.getElementById('customTplPerKgHkgEc99').value = 54;
-                document.getElementById('customTplPerKgHkgEc100').value = 52.704;
-                document.getElementById('customTplPerKgHkgCc70').value = 52.992;
-                document.getElementById('customTplPerKgHkgCc99').value = 52.992;
-                document.getElementById('customTplPerKgHkgCc100').value = 51.768;
-                document.getElementById('customTplPerKgPvgWc70').value = 42.768;
-                document.getElementById('customTplPerKgPvgWc99').value = 42.768;
-                document.getElementById('customTplPerKgPvgWc100').value = 38.664;
-                document.getElementById('customTplPerKgPvgEc70').value = 44.784;
-                document.getElementById('customTplPerKgPvgEc99').value = 44.784;
-                document.getElementById('customTplPerKgPvgEc100').value = 41.688;
-                document.getElementById('customTplPerKgPvgCc70').value = 43.776;
-                document.getElementById('customTplPerKgPvgCc99').value = 43.776;
-                document.getElementById('customTplPerKgPvgCc100').value = 40.68;
-                document.getElementById('customTplExpressPerKgHkg70').value = 48.96;
-                document.getElementById('customTplExpressPerKgHkg99').value = 48.96;
-                document.getElementById('customTplExpressPerKgHkg100').value = 48.384;
-                document.getElementById('customTplExpressPerKgPvg70').value = 47.96;
-                document.getElementById('customTplExpressPerKgPvg99').value = 47.96;
-                document.getElementById('customTplExpressPerKgPvg100').value = 47.384;
+                document.getElementById('customTplPerKgHkgWc70').value = 50.890;
+                document.getElementById('customTplPerKgHkgWc99').value = 50.890;
+                document.getElementById('customTplPerKgHkgWc100').value = 49.140;
+                document.getElementById('customTplPerKgHkgEc70').value = 54.890;
+                document.getElementById('customTplPerKgHkgEc99').value = 54.890;
+                document.getElementById('customTplPerKgHkgEc100').value = 52.890;
+                document.getElementById('customTplPerKgHkgCc70').value = 52.890;
+                document.getElementById('customTplPerKgHkgCc99').value = 52.890;
+                document.getElementById('customTplPerKgHkgCc100').value = 51.890;
+                document.getElementById('customTplPerKgPvgWc70').value = 48.650;
+                document.getElementById('customTplPerKgPvgWc99').value = 48.650;
+                document.getElementById('customTplPerKgPvgWc100').value = 46.200;
+                document.getElementById('customTplPerKgPvgEc70').value = 50.650;
+                document.getElementById('customTplPerKgPvgEc99').value = 50.650;
+                document.getElementById('customTplPerKgPvgEc100').value = 48.200;
+                document.getElementById('customTplPerKgPvgCc70').value = 49.650;
+                document.getElementById('customTplPerKgPvgCc99').value = 49.650;
+                document.getElementById('customTplPerKgPvgCc100').value = 47.200;
+                document.getElementById('customTplExpressPerKgHkg70').value = 44.94;
+                document.getElementById('customTplExpressPerKgHkg99').value = 44.94;
+                document.getElementById('customTplExpressPerKgHkg100').value = 44.94;
+                document.getElementById('customTplExpressPerKgPvg70').value = 43.94;
+                document.getElementById('customTplExpressPerKgPvg99').value = 43.94;
+                document.getElementById('customTplExpressPerKgPvg100').value = 43.94;
                 document.getElementById('customTplSpecialCargo').value = 0;
                 document.getElementById('customTplExpressSpecialCargo').value = 0;
-                document.getElementById('customAirExchangeRate').value = 7.1;
+                document.getElementById('customAirExchangeRate').value = 7.0;
                 
                 // 使用预设费率重新计算
                 calculateAirCosts();
